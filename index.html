@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Website</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            color: #ffffff; /* White text color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Use a sans-serif font */
+        }
+
+        header {
+            background-color: #2980b9; /* Darker blue for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2980b9; /* Darker blue for the footer */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff; /* White text color for headings */
+        }
+
+        a {
+            color: #ffffff; /* White text color for links */
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        button {
+            background-color: #2c3e50; /* Dark gray button background color */
+            color: #ffffff; /* White text color for the button */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with About Button -->
+    <header>
+        <h1>Welcome to the Blue Website</h1>
+        <a href="about.html">
+        <button onclick="scrollToAbout()">About</button>
+        </a>
+
+        <button style="background-color:red;" onclick="powerOff()" >Power Off</button>
+        <a href="definitely-not-a-troll.html">
+            <button>Definitely Not A Troll</button>
+        </a>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        <p style="font-size: 1px;">if you can see this then you're crazy</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>hmmm nothing to see here</p>
+    </footer>
+
+    <!-- Script to Scroll to About Section -->
+    <script>
+        function scrollToAbout() {
+            document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function powerOff() {
+            alert("you just got trolled!"); // You can replace this with your desired power-off functionality
+        }
+    </script>
+
+</body>
+</html>

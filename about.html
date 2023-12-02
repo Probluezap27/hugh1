@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not An About Page - Blue Website</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            color: #ffffff; /* White text color */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Use a sans-serif font */
+        }
+
+        header {
+            background-color: #2980b9; /* Darker blue for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2980b9; /* Darker blue for the footer */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff; /* White text color for headings */
+        }
+
+        a {
+            color: #ffffff; /* White text color for links */
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        button {
+            background-color: #2c3e50; /* Dark gray button background color */
+            color: #ffffff; /* White text color for the button */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Home Button -->
+    <header>
+        <h1>Nope</h1>
+        <button onclick="goToHome()">Home</button>
+
+        <button style="background-color:red;" onclick="powerOff()" >Power Off</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <h2>This Is Not An About Page For Some Reason</h2>
+        <p>If you wanted to see the about page it is not here </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>hmmm nothing to see here</p>
+    </footer>
+
+    <!-- Script to Go Back to Home -->
+    <script>
+        function goToHome() {
+            window.location.href = 'index.html';
+        }
+
+        function powerOff() {
+            alert("you just got trolled!"); // You can replace this with your desired power-off functionality
+        }
+    </script>
+
+</body>
+</html>
